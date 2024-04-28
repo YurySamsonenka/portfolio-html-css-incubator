@@ -450,7 +450,9 @@
       "clip",
       "-webkit-clip-path",
       "clip-path",
-      "zoom"
+      "zoom",
+      "fill",
+      "stroke"
     ]
   ]
 }

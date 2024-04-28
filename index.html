@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@700&display=swap"
@@ -14,32 +14,71 @@
 </head>
 
 <body>
-
-  <header class="header">
-    <nav class="header__nav nav">
+  <aside class="aside">
+    <label class="theme-toggle" for="theme-toggle"><input class="theme-toggle__checkbox" type="checkbox" name="radio"
+        id="theme-toggle">
+      <svg class="theme-dark" width="30.000000" height="30.000000" viewBox="0 0 30 30" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="./assets/images/Icons_Contrast.svg#dark-theme"></use>
+      </svg>
+      <svg class="theme-light" version="1.0" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+        viewBox="0 0 1220.000000 1280.000000">
+        <use xlink:href="./assets/images/sun.svg#light-theme"></use>
+      </svg>
+    </label>
+    <nav class="aside__nav nav">
       <ul class="nav-list">
         <li class="nav__item">
-          <a href="#"></a>
+          <a class="nav__link" mytitle="Home" href="#">
+            <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./assets/images/sprite.svg#home"></use>
+            </svg>
+          </a>
         </li>
         <li class="nav__item">
-          <a href="#"></a>
+          <a class="nav__link" mytitle="Services" href="#">
+            <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./assets/images/sprite.svg#services"></use>
+            </svg>
+          </a>
         </li>
         <li class="nav__item">
-          <a href="#"></a>
+          <a class="nav__link" mytitle="CV" href="#">
+            <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./assets/images/sprite.svg#cv"></use>
+            </svg>
+          </a>
         </li>
         <li class="nav__item">
-          <a href="#"></a>
+          <a class="nav__link" mytitle="Portfolio" href="#">
+            <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./assets/images/sprite.svg#portfolio"></use>
+            </svg>
+          </a>
         </li>
         <li class="nav__item">
-          <a href="#"></a>
+          <a class="nav__link" mytitle="Blog" href="#">
+            <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./assets/images/sprite.svg#blog"></use>
+            </svg>
+          </a>
         </li>
         <li class="nav__item">
-          <a href="#"></a>
+          <a class="nav__link" mytitle="Contact" href="#">
+            <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./assets/images/sprite.svg#contact"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </nav>
-    <input type="checkbox" name="" id="">
-  </header>
+  </aside>
 
   <article class="left-panel">
     <div class="left-panel__info info">
@@ -47,89 +86,138 @@
       <span class="info__name">Rayan Adlardard</span>
       <span class="info__profession">Font-end Developer</span>
     </div>
-    <div class="left-panel__social social">
-      <a class="social__link" href="#"></a>
-      <a class="social__link" href="#"></a>
-      <a class="social__link" href="#"></a>
-      <a class="social__link" href="#"></a>
-      <a class="social__link" href="#"></a>
-      <a class="social__link" href="#"></a>
+    <div class="left-panel__social social left-panel__block">
+      <a class="social__link" href="#">
+        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#facebook"></use>
+        </svg>
+      </a>
+      <a class="social__link" href="#">
+        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#instagram"></use>
+        </svg>
+      </a>
+      <a class="social__link" href="#">
+        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#twitter"></use>
+        </svg>
+      </a>
+      <a class="social__link" href="#">
+        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#linkedin"></use>
+        </svg>
+      </a>
+      <a class="social__link" href="#">
+        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#youtube"></use>
+        </svg>
+      </a>
+      <a class="social__link" href="#">
+        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#dribbble"></use>
+        </svg>
+      </a>
     </div>
-    <div class="left-panel__data data ">
+    <div class="left-panel__data data left-panel__block">
       <div class="data__item">
-        <span class="data__category">age:</span><span class="data__value">24</span>
+        <span class="data__category">Age:</span>24
       </div>
       <div class="data__item">
-        <span class="data__category">Residence:</span><span class="data__value">DB</span>
+        <span class="data__category">Residence:</span>DB
       </div>
       <div class="data__item">
         <span class="data__category">Freelance:</span><span class="data__value">Available</span>
       </div>
       <div class="data__item">
-        <span class="data__category">Address:</span><span class="data__value">Dhaka,Bangladesh</span>
+        <span class="data__category">Address:</span>Dhaka, Bangladesh
       </div>
     </div>
-    <div class="left-panel__topic topic">
+    <div class="left-panel__topic topic left-panel__block">
       <span class="topic__title">Languages</span>
       <div class="topic__item">
-        <div>
-          <span class="topic__key">Bangla</span><span class="topic__value">100%</span>
-        </div>
-        <input type="range" name="" id="">
+        <span class="topic__key">Bangla</span>
+        <span class="topic__value">100%</span>
+        <input class="topic__range" type="range" value="100" name="" id="">
       </div>
-      <div class="language__item">
-        <div>
-          <span class="topic__key">English</span><span class="topic__value">80%</span>
-        </div>
-        <input type="range" name="" id="">
+      <div class="topic__item">
+        <span class="topic__key">English</span>
+        <span class="topic__value">80%</span>
+        <input class="topic__range" type="range" value="80" name="" id="">
       </div>
-      <div class="language__item">
-        <div>
-          <span class="topic__key">Spanish</span><span class="topic__value">60%</span>
-        </div>
-        <input type="range" name="" id="">
+      <div class="topic__item">
+        <span class="topic__key">Spanish</span>
+        <span class="topic__value">60%</span>
+        <input class="topic__range" type="range" value="60" name="" id="">
       </div>
     </div>
-    <div class="left-panel__topic topic">
+    <div class="left-panel__topic topic left-panel__block">
+      <span class="topic__title">Skills</span>
       <div class="topic__item">
-        <div>
-          <span class="topic__key">Html</span><span class="topic__value">90%</span>
-        </div>
-        <input type="range" name="" id="">
+        <span class="topic__key">Html</span>
+        <span class="topic__value">90%</span>
+        <input class="topic__range" type="range" value="90" name="" id="">
       </div>
       <div class="topic__item">
-        <div>
-          <span class="topic__key">CSS</span><span class="topic__value">85%</span>
-        </div>
-        <input type="range" name="" id="">
+        <span class="topic__key">CSS</span>
+        <span class="topic__value">85%</span>
+        <input class="topic__range" type="range" value="85" name="" id="">
       </div>
       <div class="topic__item">
-        <div>
-          <span class="topic__key">Js</span><span class="topic__value">80%</span>
-        </div>
-        <input type="range" name="" id="">
+        <span class="topic__key">JS</span>
+        <span class="topic__value">80%</span>
+        <input class="topic__range" type="range" value="80" name="" id="">
       </div>
       <div class="topic__item">
-        <div>
-          <span class="topic__key">PHP</span><span class="topic__value">75%</span>
-        </div>
-        <input type="range" name="" id="">
+        <span class="topic__key">PHP</span>
+        <span class="topic__value">75%</span>
+        <input class="topic__range" type="range" value="75" name="" id="">
       </div>
       <div class="topic__item">
-        <div>
-          <span class="topic__key">WordPress</span><span class="topic__value">85%</span>
-        </div>
-        <input type="range" name="" id="">
+        <span class="topic__key">WordPress</span>
+        <span class="topic__value">85%</span>
+        <input class="topic__range" type="range" value="85" name="" id="">
       </div>
     </div>
-    <div class="left-panel__topic topic">
+    <div class="left-panel__topic topic left-panel__block">
       <span class="topic__title">Extra Skills</span>
-      <span class="topic__key topic__key_custom">Bootstrap, Materialize</span>
-      <span class="topic__key topic__key_custom">Stylus, Sass, Less</span>
-      <span class="topic__key topic__key_custom">Gulp, Webpack, Grunt</span>
-      <span class="topic__key topic__key_custom">GIT Knowledge</span>
+      <div class="topic__key topic__key_custom">
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#list-item"></use>
+        </svg>
+        <div>
+          Bootstrap, Materialize
+        </div>
+      </div>
+      <div class="topic__key topic__key_custom">
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#list-item"></use>
+        </svg>
+        <div>
+          Stylus, Sass, Less
+        </div>
+      </div>
+      <div class="topic__key topic__key_custom">
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#list-item"></use>
+        </svg>
+        <div>
+          Gulp, Webpack, Grunt
+        </div>
+      </div>
+      <div class="topic__key topic__key_custom">
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#list-item"></use>
+        </svg>
+        <div>
+          GIT Knowledge
+        </div>
+      </div>
     </div>
-    <button class="left-panel__download">Download cv<div></div></button>
+    <button class="left-panel__download">Download CV
+      <svg viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="./assets/images/sprite.svg#download"></use>
+      </svg>
+    </button>
   </article>
 
   <main>
