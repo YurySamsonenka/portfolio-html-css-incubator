@@ -19,11 +19,11 @@
         id="theme-toggle">
       <svg class="theme-dark" width="30.000000" height="30.000000" viewBox="0 0 30 30" fill="none"
         xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="./assets/images/Icons_Contrast.svg#dark-theme"></use>
+        <use xlink:href="./assets/images/sprite.svg#dark-theme"></use>
       </svg>
       <svg class="theme-light" version="1.0" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
         viewBox="0 0 1220.000000 1280.000000">
-        <use xlink:href="./assets/images/sun.svg#light-theme"></use>
+        <use xlink:href="./assets/images/sprite.svg#light-theme"></use>
       </svg>
     </label>
     <nav class="aside__nav nav">
@@ -223,47 +223,67 @@
   <main>
     <div class="wrapper">
       <section class="hero">
-        <h1 class="hero__title">
-          I’m Rayan Adlrdard <span>Front-end</span> Developer
-        </h1>
-        <p class="hero__discription">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque
-          rutrum semper sed suspendisse nunc lectus.
-        </p>
-        <a class="hero__link" href="#">hire me<div></div></a>
+        <div>
+          <h1 class="hero__title">
+            I’m Rayan Adlrdard <span>Front-end</span> Developer
+          </h1>
+          <p class="hero__discription">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque
+            rutrum semper sed suspendisse nunc lectus.
+          </p>
+          <a class="hero__link" href="#">hire me
+            <svg class="arrow-1" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./assets/images/sprite.svg#arrow-1"></use>
+            </svg>
+            <svg class="arrow-2" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./assets/images/sprite.svg#arrow-2"></use>
+            </svg>
+          </a>
+        </div>
+        <img src="./assets/images/photo.png" alt="">
       </section>
 
       <section class="services">
         <h2 class="services__title title">
           practice
         </h2>
-        <p class="services__discription">
+        <p class="services__discription discription">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
           velit mollit. lorem ipsum
         </p>
         <div class="services__cards">
           <div class="services__card">
-            <div class="services__img"></div>
+            <svg viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./assets/images/sprite.svg#coding"></use>
+            </svg>
             <span class="services__item">web development</span>
             <span class="services__category">blog, e-commerce</span>
           </div>
           <div class="services__card">
-            <div class="services__img"></div>
+            <svg viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./assets/images/sprite.svg#illustration"></use>
+            </svg>
             <span class="services__item">uI/uX design</span>
             <span class="services__category">Mobile app, website design</span>
           </div>
           <div class="services__card">
-            <div class="services__img"></div>
+            <svg viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./assets/images/sprite.svg#microphone"></use>
+            </svg>
             <span class="services__item">sound design</span>
             <span class="services__category">Voice Over, Beat Making</span>
           </div>
           <div class="services__card">
-            <div class="services__img"></div>
+            <svg viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./assets/images/sprite.svg#development"></use>
+            </svg>
             <span class="services__item">game design</span>
             <span class="services__category">Character Design, Props & Objects</span>
           </div>
           <div class="services__card">
-            <div class="services__img"></div>
+            <svg viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./assets/images/sprite.svg#photographer"></use>
+            </svg>
             <span class="services__item">photography</span>
             <span class="services__category">portrait, product photography</span>
           </div>
@@ -271,7 +291,11 @@
             <span class="services__item">advertising</span>
             <span class="services__category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam
               in ac dictum a urna viverra morbi.</span>
-            <a href="#">ORDER NOW<div></div></a>
+            <a class="services__link" href="#">ORDER NOW
+              <svg viewBox="0 0 5 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./assets/images/sprite.svg#services-arrow"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -280,7 +304,7 @@
         <h2 class="plans__title title">
           Price plans
         </h2>
-        <p class="plans__discription">
+        <p class="plans__discription discription">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
           velit mollit. lorem ipsum
         </p>
