@@ -56,12 +56,14 @@ a {
 
 body {
   position: relative;
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 }
 
 .wrapper {
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   margin: 0 23.26% 9.37%;
 }
 
@@ -211,8 +213,7 @@ body {
   width: 150px;
   height: 150px;
   margin-bottom: 31px;
-  background-image: url('../assets/images/Profile-mini.jpg');
-  background-size: cover;
+  object-fit: cover;
 }
 .info__name {
   margin-bottom: 15px;
@@ -363,6 +364,10 @@ body {
     max-width: 500px;
     margin-top: 93px;
   }
+
+  img {
+    object-fit: cover;
+  }
 }
 .hero__title {
   margin-bottom: 18px;
@@ -456,7 +461,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 310px;
-  height: 225px;
+  min-height: 225px;
   padding: 25px 25px 33px;
   background-color: $white-color;
 
@@ -495,6 +500,12 @@ body {
   text-transform: capitalize;
 }
 .services__category {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  width: 100%;
+  max-height: 95px;
+  overflow: hidden;
   font-size: 1.5rem;
   line-height: 24px;
   text-align: center;
@@ -643,9 +654,8 @@ body {
     background-color: $primary-color;
   }
 }
-.variant__link_select {
-}
 .recommendations {
+  margin-bottom: 50px;
 }
 .recommendations__title {
 }
@@ -654,78 +664,216 @@ body {
 .discription {
 }
 .recommendations__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .recommendations__card {
+  max-width: 310px;
+  padding: 25px 31px 25px 17px;
+  background-color: $white-color;
 }
+.comment__stars {
+  display: flex;
+  margin-bottom: 17px;
+  column-gap: 10px;
+}
+.star {
+  width: 18px;
+  height: 18px;
+
+  &-select {
+    fill: $primary-color;
+  }
+  &-unselect {
+    fill: $secondary-dark-color;
+  }
+}
+
 .comment {
 }
 .comment__stars {
 }
 .comment__title {
+  display: block;
+  margin-bottom: 17px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 123.6%;
+  text-transform: capitalize;
 }
 .comment__text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  max-height: 120px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  font-size: 1.5rem;
+  line-height: 24px;
+  color: $secondary-dark-color;
+  text-transform: capitalize;
 }
 .comment__flexbox {
+  display: flex;
+  align-items: center;
 }
 .comment__photo {
+  display: block;
+  margin-right: 13px;
+  object-fit: cover;
 }
 .comment__info-container {
 }
 .comment__user-name {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 123.6%;
 }
 .comment__user-profession {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 24px;
+  color: $secondary-dark-color;
 }
 .separator {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 70px;
+  column-gap: 10px;
 }
 .separator__point {
+  width: 10px;
+  height: 10px;
+  background-color: $primary-color;
+  border-radius: 50%;
 }
 .practice {
+  margin-bottom: 70px;
 }
 .practice__title {
 }
 .practice__discription {
 }
 .practice__list {
+  display: flex;
+  flex-direction: column;
+  padding: 47px 29px 38px 37px;
+  row-gap: 28px;
+  background-color: $white-color;
 }
 .practice__item {
+  display: flex;
+  column-gap: 179px;
+
+  &:not(:last-child) {
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid $support-dark-color;
+  }
 }
 .practice__info {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: fit-content;
+  row-gap: 25px;
+  column-gap: 21px;
 }
 .practice__place {
+  display: block;
+  grid-column: 1/3;
+  min-width: 208px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 123.6%;
 }
 .practice__status {
+  font-size: 1.5rem;
+  line-height: 24px;
 }
 .practice__interval {
+  justify-self: center;
+  align-self: center;
+  padding: 4px 7px;
+  line-height: 100.9%;
+  color: $white-color;
+  background-color: $primary-color;
 }
 .practice__text-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
 }
 .practice__document {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 123.6%;
+}
+.practice__discription {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  font-size: 1.5rem;
+  line-height: 24px;
+  color: $secondary-dark-color;
 }
 .portfolio {
+  margin-bottom: 70px;
 }
 .portfolio__title {
 }
 .portfolio__discription {
 }
 .portfolio__tags {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  column-gap: 37px;
 }
 .portfolio__tag {
-}
-.portfolio__tag_select {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 123.6%;
+
+  &_select {
+    color: $primary-color;
+  }
 }
 .portfolio__works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
 }
 .portfolio__links {
+  img {
+    object-fit: cover;
+  }
 }
 .blog {
 }
 .blog__title {
 }
+.blog__text {
+}
 .blog__items {
+  display: flex;
+  justify-content: space-between;
 }
 .blog__item {
+  max-width: 310px;
+  background-color: $white-color;
 }
-.blog__img {
+.blog__text {
+  padding: 25px 36px 16px 25px;
+}
+.blog__title {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 123.6%;
 }
 .blog__discription {
 }
