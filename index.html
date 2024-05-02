@@ -847,86 +847,101 @@
         </div>
       </section>
 
-      <div>
+      <div class="two-section">
         <section class="connection">
+          <h2 class="title">
+            Leave us your info
+          </h2>
           <form class="connection__form" action="#">
             <span class="connection__form-input">Your Full Name (Required)</span>
-            <input type="text">
+            <input class="connection__input" type="text" required>
             <span class="connection__form-input">Your Email (Required)</span>
-            <input type="text">
+            <input class="connection__input" type="text" required>
             <span class="connection__form-input">Subject</span>
-            <input type="text">
+            <input class="connection__input" type="text">
             <span class="connection__form-input">Your Message</span>
-            <input type="text">
-            <input type="button" value="send message">
+            <input class="connection__input" type="text">
+            <input class="connection__submit" type="submit" value="send message">
           </form>
         </section>
         <section class="contact-info">
+          <h2 class="title">
+            Contact information
+          </h2>
           <div class="contact-info__cards">
             <div class="contact-info__card">
-              <img class="contact-info__img" src="" alt="">
-              <div class="contact-info__flexbox">
-                <div>
-                  <span class="contact-info__key">Country:</span>
-                  <span class="contact-info__value">Bangladesh</span>
-                </div>
-                <div>
-                  <span class="contact-info__key">City:</span>
-                  <span class="contact-info__value">Dhaka</span>
-                </div>
-                <div>
-                  <span class="contact-info__key">Streat:</span>
-                  <span class="contact-info__value">35 vhatara, Badda</span>
-                </div>
+              <div class="contact-info__img">
+                <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./assets/images/sprite.svg#location"></use>
+                </svg>
+              </div>
+              <div class="contact-info__grid">
+                <span class="contact-info__key">Country:</span>
+                <span class="contact-info__value">Bangladesh</span>
+                <span class="contact-info__key">City:</span>
+                <span class="contact-info__value">Dhaka</span>
+                <span class="contact-info__key">Streat:</span>
+                <span class="contact-info__value">35 vhatara, Badda</span>
               </div>
             </div>
             <div class="contact-info__card">
-              <img class="contact-info__img" src="" alt="">
-              <div class="contact-info__flexbox">
-                <div>
-                  <span class="contact-info__key">Email:</span>
-                  <span class="contact-info__value">youremail@gmail.com</span>
-                </div>
-                <div>
-                  <span class="contact-info__key">Skype:</span>
-                  <span class="contact-info__value">@yourusername</span>
-                </div>
-                <div>
-                  <span class="contact-info__key">Telegram:</span>
-                  <span class="contact-info__value">@yourusername</span>
-                </div>
+              <div class="contact-info__img">
+                <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./assets/images/sprite.svg#mail"></use>
+                </svg>
+              </div>
+              <div class="contact-info__grid">
+                <span class="contact-info__key">Email:</span>
+                <a class="contact-info__value" href="mailto:youremail@gmail.com">youremail@gmail.com</a>
+                <span class="contact-info__key">Skype:</span>
+                <a class="contact-info__value" href="skype:@yourusername">@yourusername</a>
+                <span class="contact-info__key">Telegram:</span>
+                <a class="contact-info__value" href="https://web.telegram.org/">@yourusername</a>
               </div>
             </div>
             <div class="contact-info__card">
-              <img class="contact-info__img" src="" alt="">
-              <div class="contact-info__flexbox">
-                <div>
-                  <span class="contact-info__key">Support services:</span>
-                  <span class="contact-info__value">15369</span>
-                </div>
-                <div>
-                  <span class="contact-info__key">Office:</span>
-                  <span class="contact-info__value">+58 (021)356 587 235</span>
-                </div>
-                <div>
-                  <span class="contact-info__key">Personal:</span>
-                  <span class="contact-info__value">+58 (021)356 587 235</span>
-                </div>
+              <div class="contact-info__img">
+                <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./assets/images/sprite.svg#mobile"></use>
+                </svg>
+              </div>
+              <div class="contact-info__grid">
+                <span class="contact-info__key">Support services:</span>
+                <span class="contact-info__value">15369</span>
+                <span class="contact-info__key">Office:</span>
+                <a class="contact-info__value" href="tel:+58021356587235">+58 (021)356 587 235</a>
+                <span class="contact-info__key">Personal:</span>
+                <a class="contact-info__value" href="tel:+58021356587235">+58 (021)356 587 235</a>
               </div>
             </div>
           </div>
         </section>
       </div>
 
-      <section class="pictures">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <section class="map">
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8d5c95ea2eeda91b8501ec6df17983d04dc1e03f4a979bd9a5af2f5756ed9bb4&amp;width=100%25&amp;height=300&amp;lang=en_US&amp;scroll=true"></script>
+      </section>
+
+      <section class="banners">
+        <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#banner1"></use>
+        </svg>
+        <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#banner2"></use>
+        </svg>
+        <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#banner3"></use>
+        </svg>
+        <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#banner4"></use>
+        </svg>
       </section>
 
       <footer class="footer">
-        <div></div>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./assets/images/sprite.svg#copyring"></use>
+        </svg>
         <span class="footer__copyring">2021 All Rights Reserved.Ojjomedia</span>
       </footer>
     </div>
