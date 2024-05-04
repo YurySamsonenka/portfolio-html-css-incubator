@@ -112,11 +112,13 @@ body {
   transition: fill 0.3s linear;
   fill: #767676;
 }
-.nav__link:hover {
-  background-color: #ffb400;
-}
-.nav__link:hover svg {
-  fill: #2b2b2b;
+@media (hover: hover) {
+  .nav__link:hover {
+    background-color: #ffb400;
+  }
+  .nav__link:hover svg {
+    fill: #2b2b2b;
+  }
 }
 
 [mytitle]::after {
@@ -134,20 +136,22 @@ body {
   border-top: 15px solid transparent;
   transition: 0.1s;
 }
-[mytitle]:hover::after {
-  content: attr(mytitle);
-  z-index: 100;
-  width: min-content;
-  padding: 6px 15px 3px 15px;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 15px;
-  color: #ffffff;
-  background-color: #2b2b2b;
-  border-radius: 2px;
-}
-[mytitle]:hover::before {
-  border-top: 10px solid #2b2b2b;
+@media (hover: hover) {
+  [mytitle]:hover::after {
+    content: attr(mytitle);
+    z-index: 100;
+    width: min-content;
+    padding: 6px 15px 3px 15px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 15px;
+    color: #ffffff;
+    background-color: #2b2b2b;
+    border-radius: 2px;
+  }
+  [mytitle]:hover::before {
+    border-top: 10px solid #2b2b2b;
+  }
 }
 
 .left-panel {
@@ -225,7 +229,6 @@ body {
 }
 
 .data__category {
-  display: block;
   padding: 0 8px 0 5px;
   background-color: #ffb400;
 }
@@ -239,7 +242,6 @@ body {
 }
 
 .topic__title {
-  display: block;
   margin-bottom: 15px;
   font-weight: 500;
   font-size: 18px;
@@ -321,6 +323,7 @@ main {
   justify-content: center;
   margin-bottom: 138px;
   padding: 6px 57px 0 60px;
+  row-gap: 20px;
   background-color: #ffffff;
 }
 .hero > div {
@@ -375,11 +378,13 @@ main {
   opacity: 0;
   transition: opacity 0.3s linear;
 }
-.hero__link:hover .arrow-1 {
-  opacity: 0;
-}
-.hero__link:hover .arrow-2 {
-  opacity: 1;
+@media (hover: hover) {
+  .hero__link:hover .arrow-1 {
+    opacity: 0;
+  }
+  .hero__link:hover .arrow-2 {
+    opacity: 1;
+  }
 }
 
 .services {
@@ -408,8 +413,9 @@ main {
 .services__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   row-gap: 20px;
+  column-gap: min(max(19px, 2%), 30px);
 }
 
 .services__card {
@@ -482,8 +488,10 @@ main {
   transition: transform 0.2s linear;
   fill: currentColor;
 }
-.services__link:hover svg {
-  transform: translateX(4px);
+@media (hover: hover) {
+  .services__link:hover svg {
+    transform: translateX(4px);
+  }
 }
 
 .plans {
@@ -493,8 +501,9 @@ main {
 .plans__variants {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   row-gap: 21px;
+  column-gap: min(max(19px, 2%), 30px);
 }
 
 .variant {
@@ -538,7 +547,6 @@ main {
 }
 
 .variant__price {
-  display: block;
   margin-bottom: 9px;
   font-size: 1.5rem;
   line-height: 24px;
@@ -614,8 +622,9 @@ main {
 .recommendations__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   row-gap: 21px;
+  column-gap: min(max(19px, 2%), 30px);
 }
 
 .recommendations__card {
@@ -642,7 +651,6 @@ main {
 }
 
 .comment__title {
-  display: block;
   margin-bottom: 17px;
   font-weight: 500;
   font-size: 1.8rem;
@@ -675,7 +683,6 @@ main {
 }
 
 .comment__user-name {
-  display: block;
   margin-bottom: 5px;
   font-weight: 500;
   font-size: 1.8rem;
@@ -683,7 +690,6 @@ main {
 }
 
 .comment__user-profession {
-  display: block;
   font-size: 1.5rem;
   line-height: 24px;
   color: #767676;
@@ -718,7 +724,8 @@ main {
 
 .practice__item {
   display: flex;
-  column-gap: 179px;
+  justify-content: space-between;
+  column-gap: min(max(27px, 2%), 30px);
 }
 .practice__item:not(:last-child) {
   padding-bottom: 10px;
@@ -734,7 +741,6 @@ main {
 }
 
 .practice__place {
-  display: block;
   grid-column: 1/3;
   min-width: 208px;
   font-weight: 500;
@@ -759,6 +765,7 @@ main {
 .practice__text-container {
   display: flex;
   flex-direction: column;
+  max-width: 536px;
   row-gap: 28px;
 }
 
@@ -780,8 +787,10 @@ main {
 
 .portfolio__tags {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
+  row-gap: 10px;
   column-gap: 37px;
 }
 .portfolio__tags input {
@@ -809,8 +818,9 @@ main {
 .portfolio__works {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   row-gap: 20px;
+  column-gap: min(max(19px, 2%), 30px);
 }
 
 .portfolio__links {
@@ -838,8 +848,10 @@ main {
   transform: rotate(45deg);
   fill: #2b2b2b;
 }
-.portfolio__links:hover div {
-  opacity: 1;
+@media (hover: hover) {
+  .portfolio__links:hover div {
+    opacity: 1;
+  }
 }
 
 .blog {
@@ -849,8 +861,9 @@ main {
 .blog__items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   row-gap: 21px;
+  column-gap: min(max(19px, 2%), 30px);
 }
 
 .blog__item {
@@ -863,7 +876,6 @@ main {
 }
 
 .blog__title {
-  display: block;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 1.8rem;
@@ -901,15 +913,19 @@ main {
   transition: transform 0.2s linear;
   fill: currentColor;
 }
-.blog__link:hover svg {
-  transform: translate(4px, 2px);
+@media (hover: hover) {
+  .blog__link:hover svg {
+    transform: translate(4px, 2px);
+  }
 }
 
 .two-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 70px;
+  row-gap: 70px;
+  column-gap: min(max(10px, 3%), 30px);
 }
 
 .connection {
@@ -925,7 +941,6 @@ main {
 }
 
 .connection__form-input {
-  display: block;
   width: 100%;
   margin-bottom: 8px;
   font-weight: 500;
@@ -1008,8 +1023,10 @@ main {
 .contact-info__grid a {
   transition: color 0.3s linear;
 }
-.contact-info__grid a:hover {
-  color: #ffb400;
+@media (hover: hover) {
+  .contact-info__grid a:hover {
+    color: #ffb400;
+  }
 }
 
 .contact-info__key {
@@ -1028,8 +1045,11 @@ main {
 
 .banners {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 70px;
+  row-gap: 20px;
+  column-gap: min(max(19px, 10%), 100px);
 }
 .banners svg {
   width: 140px;

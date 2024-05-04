@@ -155,12 +155,14 @@ body {
     fill: $secondary-dark-color;
   }
 
-  &:hover {
-    background-color: $primary-color;
-  }
+  @media (hover: hover) {
+    &:hover {
+      background-color: $primary-color;
 
-  &:hover svg {
-    fill: $primary-dark-color;
+      & svg {
+        fill: $primary-dark-color;
+      }
+    }
   }
 }
 
@@ -182,21 +184,23 @@ body {
     transition: 0.1s;
   }
 
-  &:hover::after {
-    content: attr(mytitle);
-    z-index: 100;
-    width: min-content;
-    padding: 6px 15px 3px 15px;
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 15px;
-    color: $white-color;
-    background-color: $primary-dark-color;
-    border-radius: 2px;
-  }
+  @media (hover: hover) {
+    &:hover::after {
+      content: attr(mytitle);
+      z-index: 100;
+      width: min-content;
+      padding: 6px 15px 3px 15px;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 15px;
+      color: $white-color;
+      background-color: $primary-dark-color;
+      border-radius: 2px;
+    }
 
-  &:hover::before {
-    border-top: 10px solid $primary-dark-color;
+    &:hover::before {
+      border-top: 10px solid $primary-dark-color;
+    }
   }
 }
 
@@ -269,7 +273,6 @@ body {
   align-items: center;
 }
 .data__category {
-  display: block;
   padding: 0 8px 0 5px;
   background-color: $primary-color;
 }
@@ -284,7 +287,6 @@ body {
   }
 }
 .topic__title {
-  display: block;
   margin-bottom: 15px;
   font-weight: 500;
   font-size: 18px;
@@ -372,7 +374,7 @@ main {
   justify-content: center;
   margin-bottom: 138px;
   padding: 6px 57px 0 60px;
-  // column-gap: 27px;
+  row-gap: 20px;
   background-color: $white-color;
 
   & > div {
@@ -430,13 +432,15 @@ main {
     transition: opacity 0.3s linear;
   }
 
-  &:hover {
-    .arrow-1 {
-      opacity: 0;
-    }
+  @media (hover: hover) {
+    &:hover {
+      .arrow-1 {
+        opacity: 0;
+      }
 
-    .arrow-2 {
-      opacity: 1;
+      .arrow-2 {
+        opacity: 1;
+      }
     }
   }
 }
@@ -467,8 +471,9 @@ main {
 .services__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   row-gap: 20px;
+  column-gap: min(max(19px, 2%), 30px);
 }
 .services__card {
   display: flex;
@@ -543,8 +548,10 @@ main {
     fill: currentColor;
   }
 
-  &:hover svg {
-    transform: translateX(4px);
+  @media (hover: hover) {
+    &:hover svg {
+      transform: translateX(4px);
+    }
   }
 }
 .plans {
@@ -557,8 +564,9 @@ main {
 .plans__variants {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   row-gap: 21px;
+  column-gap: min(max(19px, 2%), 30px);
 }
 .plans__variant {
 }
@@ -602,7 +610,6 @@ main {
   text-transform: capitalize;
 }
 .variant__price {
-  display: block;
   margin-bottom: 9px;
   font-size: 1.5rem;
   line-height: 24px;
@@ -683,8 +690,9 @@ main {
 .recommendations__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   row-gap: 21px;
+  column-gap: min(max(19px, 2%), 30px);
 }
 .recommendations__card {
   max-width: 310px;
@@ -713,7 +721,6 @@ main {
 .comment__stars {
 }
 .comment__title {
-  display: block;
   margin-bottom: 17px;
   font-weight: 500;
   font-size: 1.8rem;
@@ -744,14 +751,12 @@ main {
 .comment__info-container {
 }
 .comment__user-name {
-  display: block;
   margin-bottom: 5px;
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 123.6%;
 }
 .comment__user-profession {
-  display: block;
   font-size: 1.5rem;
   line-height: 24px;
   color: $secondary-dark-color;
@@ -785,7 +790,8 @@ main {
 }
 .practice__item {
   display: flex;
-  column-gap: 179px;
+  justify-content: space-between;
+  column-gap: min(max(27px, 2%), 30px);
 
   &:not(:last-child) {
     padding-bottom: 10px;
@@ -800,7 +806,6 @@ main {
   column-gap: 21px;
 }
 .practice__place {
-  display: block;
   grid-column: 1/3;
   min-width: 208px;
   font-weight: 500;
@@ -822,6 +827,7 @@ main {
 .practice__text-container {
   display: flex;
   flex-direction: column;
+  max-width: 536px;
   row-gap: 28px;
 }
 .practice__document {
@@ -843,8 +849,10 @@ main {
 }
 .portfolio__tags {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
+  row-gap: 10px;
   column-gap: 37px;
 
   input {
@@ -874,8 +882,9 @@ main {
 .portfolio__works {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   row-gap: 20px;
+  column-gap: min(max(19px, 2%), 30px);
 }
 .portfolio__links {
   position: relative;
@@ -905,8 +914,10 @@ main {
     }
   }
 
-  &:hover div {
-    opacity: 1;
+  @media (hover: hover) {
+    &:hover div {
+      opacity: 1;
+    }
   }
 }
 .blog {
@@ -919,8 +930,9 @@ main {
 .blog__items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   row-gap: 21px;
+  column-gap: min(max(19px, 2%), 30px);
 }
 .blog__item {
   max-width: 310px;
@@ -930,7 +942,6 @@ main {
   padding: 25px 36px 16px 25px;
 }
 .blog__title {
-  display: block;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 1.8rem;
@@ -967,15 +978,19 @@ main {
     fill: currentColor;
   }
 
-  &:hover svg {
-    transform: translate(4px, 2px);
+  @media (hover: hover) {
+    &:hover svg {
+      transform: translate(4px, 2px);
+    }
   }
 }
 .two-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 70px;
+  row-gap: 70px;
+  column-gap: min(max(10px, 3%), 30px);
 }
 .connection {
   width: 100%;
@@ -992,7 +1007,6 @@ main {
   // }
 }
 .connection__form-input {
-  display: block;
   width: 100%;
   margin-bottom: 8px;
   font-weight: 500;
@@ -1073,8 +1087,10 @@ main {
   a {
     transition: color 0.3s linear;
 
-    &:hover {
-      color: $primary-color;
+    @media (hover: hover) {
+      &:hover {
+        color: $primary-color;
+      }
     }
   }
 }
@@ -1091,8 +1107,11 @@ main {
 }
 .banners {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 70px;
+  row-gap: 20px;
+  column-gap: min(max(19px, 10%), 100px);
 
   svg {
     width: 140px;
